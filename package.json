@@ -1,0 +1,42 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.1.5",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "react-scripts-ts": "2.13.0"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts-ts start",
+    "build-js": "react-scripts-ts build",
+    "start": "run-p watch-css start-js",
+    "build": "run-s build-css build-js",
+    "precommit": "lint-staged",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "lint-staged": {
+    "{src}/**/*.{js,jsx,ts,tsx,json,css,scss,html}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^22.1.0",
+    "@types/node": "^9.4.0",
+    "@types/react": "^16.0.35",
+    "@types/react-dom": "^16.0.3",
+    "@types/react-router-dom": "^4.2.3",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.1.0",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.2",
+    "prettier": "1.10.2",
+    "typescript": "^2.6.2"
+  }
+}
