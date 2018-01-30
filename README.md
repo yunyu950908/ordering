@@ -18,8 +18,8 @@
 ```
 
 ### HTML属性顺序及部分属性的命名方法
-1. `class`——使用`_`分隔（如：`class="xxx_container"`）
-2. `id, name`——使用`_`分隔（同上）
+1. `class`——使用`-`分隔（如：`class="xxx_container"`）
+2. `id, name`——使用`-`分隔（同上）
 3. `data-*`
 4. `src, for, type, href, value`
 5. `title, alt`
