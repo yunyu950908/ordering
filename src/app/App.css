@@ -1,3 +1,1 @@
-div {
-  color: red;
-  background: green; }
+@import url(~antd/dist/antd.css);
